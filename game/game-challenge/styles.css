@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bungee Spice", cursive;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.gameboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  padding: 5px;
+  height: 80vh;
+  width: 89vw;
+  box-sizing: border-box;
+  background-color: green;
+  border: 2px solid orange;
+}
+.gameboard__paddle1 {
+  height: 35%;
+  width: 2%;
+  border: 2px solid green;
+  background-color: aquamarine;
+}
+.gameboard__ball {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, red, yellow);
+}
+.gameboard__paddle2 {
+  margin-right: 5px;
+  height: 35%;
+  width: 2%;
+  border: 2px solid yellow;
+  background-color: lightgoldenrodyellow;
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-start {
+  grid-area: grid_start;
+}
+
+.grid_player1 {
+  grid-area: player1;
+}
+
+.grid_player2 {
+  grid-area: player2;
+}
+
+.grid_score1 {
+  grid-area: score1;
+}
+
+.grid_score2 {
+  grid-area: score2;
+}
+
+.scoreboard {
+  margin-left: 40px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-areas: "player1 player1 score1 grid_start grid_start grid_start grid_start player2 player2 score2";
+  grid-gap: 5px;
+  padding-left: 10px;
+}
+.scoreboard__start {
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.scoreboard__player {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+.scoreboard__player-score {
+  border: 1px solid orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */
